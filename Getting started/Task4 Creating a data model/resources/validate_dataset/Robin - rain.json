@@ -1,0 +1,10 @@
+{
+  "operationId" : "a565f1a2-7b6d-48a0-a030-b957601d6c70",
+  "body" : {
+    "name" : "Robin",
+    "weather" : {
+      "temperature" : "cold",
+      "rainForecast" : 90
+    }
+  }
+}

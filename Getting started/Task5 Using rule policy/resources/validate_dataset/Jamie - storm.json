@@ -1,0 +1,11 @@
+{
+  "operationId" : "8d477d08-dd9a-4da1-bcc0-39dd0eecbf0c",
+  "body" : {
+    "name" : "Jamie",
+    "weather" : {
+      "temperature" : "cold",
+      "rainForecast" : 100,
+      "stormAlert" : true
+    }
+  }
+}

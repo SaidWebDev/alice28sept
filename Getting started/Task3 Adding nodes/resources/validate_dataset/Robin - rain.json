@@ -1,0 +1,7 @@
+{
+  "operationId" : "598358ae-5b8a-40ea-a604-e4377caf9b4e",
+  "body" : {
+    "name" : "Robin",
+    "rainForecast" : 87
+  }
+}

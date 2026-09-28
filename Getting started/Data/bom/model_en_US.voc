@@ -1,0 +1,25 @@
+
+# com.ibm.ads.samples.getting_stated.data.Temperature
+com.ibm.ads.samples.getting_stated.data.Temperature#concept.label = temperature
+com.ibm.ads.samples.getting_stated.data.Temperature.cold#instance.label = cold
+com.ibm.ads.samples.getting_stated.data.Temperature.hot#instance.label = hot
+com.ibm.ads.samples.getting_stated.data.Temperature.warm#instance.label = warm
+
+# com.ibm.ads.samples.getting_stated.data.Weather
+com.ibm.ads.samples.getting_stated.data.Weather#concept.documentation = 
+com.ibm.ads.samples.getting_stated.data.Weather#concept.label = weather
+com.ibm.ads.samples.getting_stated.data.Weather.Weather(long,boolean,com.ibm.ads.samples.getting_stated.data.Temperature)#phrase.navigation = a new {weather} where {0, rain forecast} {1, storm alert} {2, temperature}
+com.ibm.ads.samples.getting_stated.data.Weather.rainForecast1#phrase.action = set the rain forecast of {this} to {rain forecast}
+com.ibm.ads.samples.getting_stated.data.Weather.rainForecast1#phrase.addition_setter = add {rain forecast} to the rain forecast of {this}
+com.ibm.ads.samples.getting_stated.data.Weather.rainForecast1#phrase.navigation = {rain forecast} of {this}
+com.ibm.ads.samples.getting_stated.data.Weather.rainForecast1#phrase.subtraction_setter = subtract {rain forecast} from the rain forecast of {this}
+com.ibm.ads.samples.getting_stated.data.Weather.stormAlert1#phrase.action[0] = {this} gets storm alert only if {storm alert}
+com.ibm.ads.samples.getting_stated.data.Weather.stormAlert1#phrase.action[1] = make it {storm alert} that {this} is storm alert
+com.ibm.ads.samples.getting_stated.data.Weather.stormAlert1#phrase.action[1].deprecated = true
+com.ibm.ads.samples.getting_stated.data.Weather.stormAlert1#phrase.navigation = {this} is storm alert
+com.ibm.ads.samples.getting_stated.data.Weather.stormAlert1#phrase.negative_predicate = {this} is not storm alert
+com.ibm.ads.samples.getting_stated.data.Weather.stormAlert1#phrase.negative_predicate_setter = {this} does not get storm alert
+com.ibm.ads.samples.getting_stated.data.Weather.stormAlert1#phrase.positive_predicate_setter = {this} gets storm alert
+com.ibm.ads.samples.getting_stated.data.Weather.temperature#phrase.action = set the temperature of {this} to {temperature}
+com.ibm.ads.samples.getting_stated.data.Weather.temperature#phrase.clearer = clear the temperature of {this}
+com.ibm.ads.samples.getting_stated.data.Weather.temperature#phrase.navigation = {temperature} of {this}

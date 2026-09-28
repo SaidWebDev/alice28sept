@@ -1,0 +1,48 @@
+
+package com.ibm.ads.samples.getting_stated.data;
+
+
+class Temperature
+        extends java.lang.Enum
+        property ads.typeId "1"
+        property com.fasterxml.jackson.annotation.JsonTypeName "temperature"
+        #de.generated
+{
+    domain {static cold, static hot, static warm}
+    static final readonly com.ibm.ads.samples.getting_stated.data.Temperature cold
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "cold";
+    static final readonly com.ibm.ads.samples.getting_stated.data.Temperature hot
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "hot";
+    static final readonly com.ibm.ads.samples.getting_stated.data.Temperature warm
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "warm";
+}
+
+class Weather
+        property ads.typeId "2"
+        property com.fasterxml.jackson.annotation.JsonTypeName "weather"
+        #de.generated
+{
+    long rainForecast1
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "rainForecast"
+                #update;
+    boolean stormAlert1
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "stormAlert"
+                #update;
+    com.ibm.ads.samples.getting_stated.data.Temperature temperature
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "temperature"
+                #update;
+    Weather(long rainForecast1, boolean stormAlert1, com.ibm.ads.samples.getting_stated.data.Temperature temperature)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Weather()
+                #dataio.default;
+}
+
